@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Install required packages
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt && python setup.py install
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy project files to container
 COPY wordcloud_fa /app
@@ -15,6 +15,6 @@ COPY wordcloud_fa /app
 EXPOSE 8000
 
 # Set default command to run the app
-CMD ["python", "wordcloud_fa.py"]
+CMD ["python", "wordcloud_fa/WordCloudFa.py"]
 
 

@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copy project files to container
-COPY wordcloud_fa /app
+COPY WordCloudFa.py /app
 
 # Expose required ports
 EXPOSE 8000

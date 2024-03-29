@@ -9,7 +9,7 @@ COPY .requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt && python setup.py install
 
 # Copy project files to container
-COPY word_cloud_fa /app
+COPY wordcloud_fa /app
 
 # Expose required ports
 EXPOSE 8000

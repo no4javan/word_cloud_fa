@@ -5,7 +5,7 @@ FROM hub.hamdocker.ir/library/python:3.8
 WORKDIR /app
 
 # Install required packages
-COPY .requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt && python setup.py install
 
 # Copy project files to container

@@ -15,6 +15,6 @@ COPY wordcloud_fa /app/wordcloud_fa
 EXPOSE 8000
 
 # Set default command to run the app
-CMD ["python", "WordCloudFa.py"]
+CMD ["python", "wordcloud_fa/WordCloudFa.py"]
 
 
